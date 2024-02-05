@@ -36,7 +36,7 @@ export default async function Navbar() {
   const links = await getLinks();
 
   return (
-    <header className="mb-8">
+    <header style={{height: 60, marginTop: 40}} className="mb-8">
       <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
         <Link href="/">
           <h1 className="text-2xl md:text-4xl font-bold">
@@ -64,7 +64,7 @@ export default async function Navbar() {
             </div>
           ))}
         </nav>
-        <div className="flex divide-x ">
+        {/* <div className="flex divide-x ">
           <Button
             variant={"outline"}
             onClick={() => handleCartClick()}
@@ -75,7 +75,7 @@ export default async function Navbar() {
               Cart
             </span>
           </Button>
-        </div>
+        </div> */}
       </div>
     </header>
   );
